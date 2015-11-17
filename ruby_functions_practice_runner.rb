@@ -70,7 +70,9 @@ nights_to_xmas_result = nights_to_xmas
 puts "The number of nights from today until Christmas morning is: #{nights_to_xmas_result}"
 
 ####Given a date of birth, calculate how old a person born on that date would be
-
+date_of_birth = Date.new(1960,11,16)
+how_old = get_age(date_of_birth)
+puts "A person born on #{date_of_birth} would be #{how_old} years old" 
 
 #### Create a command line interface using put, gets to interact with the your functions 
 

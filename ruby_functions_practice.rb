@@ -54,20 +54,15 @@ def calculate_sphere_volume(radius)
 end
 
 def nights_to_xmas
-  # night_count = 0
-  # time = Time.new
-  # day = time.day
-  # month = time.month
-  # while !(month == 12) and !(day == 25)
-  #   night_count +=1
-  #   day = time.day + 1
-  # end
-  # return night_count
-  
-  # current_date = Date.today
-  current_date = Date.new(2015,12,24)
+  current_date = Date.today
   xmas_day = Date.new(2015,12,25)
-  night_count = xmas_day - current_date
-  return night_count
-
+  night_count = (xmas_day - current_date).to_i
 end
+
+def get_age(date_of_birth)
+  current_date = Date.today
+  puts date_of_birth
+  puts current_date
+  how_old = ((current_date - date_of_birth)/365).to_i
+end
+
